@@ -97,7 +97,7 @@ ul { list-style: none; }
    ============================================================ */
 #hero {
   min-height: 100vh;
-  background: url('/Designer.png') center/cover no-repeat;
+  background: linear-gradient(135deg, #0a1a34 0%, #1a4f8a 55%, #0984e3 100%);
   display: flex;
   align-items: center;
   padding: calc(var(--nav-h) + 48px) 24px 100px;
