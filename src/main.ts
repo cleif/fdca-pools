@@ -86,7 +86,7 @@ function renderLocations(): void {
           </div>
 
           <div class="pool-section-title">Phone</div>
-          <p class="pool-card-phone">${pool.phone}</p>
+          ${pool.phone ? `<p class="pool-card-phone">${pool.phone}</p>` : ''}
 
           <a href="#schedule" class="btn pool-card-cta" data-pool-id="${pool.id}">
             Book at ${pool.name} →

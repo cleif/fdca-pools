@@ -5,7 +5,7 @@ export interface PoolLocation {
   name: string;
   fullName: string;
   address: string;
-  phone: string;
+  phone?: string;
   lanes: number;
   maxCapacity: number;
   amenities: string[];
