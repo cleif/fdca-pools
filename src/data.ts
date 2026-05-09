@@ -23,7 +23,7 @@ export const pools: PoolLocation[] = [
     address: '10207 Emiline St, La Vista, NE 68128',
     lanes: 6,
     maxCapacity: 80,
-    amenities: ['Lap Pool', 'Kiddie Pool', 'Hot Tub', 'Concession Stand', 'On-site Lifeguards', 'Party Pavilion'],
+    amenities: ['New Trees', '2 Spunky Dogs', 'Outdoor TVs', 'Pine Scented Restrooms', 'Sprawling Recycling Pavilion'],
     hours: {
       weekdays: { open: 7,  close: 20 },
       weekends: { open: 9,  close: 18 },
