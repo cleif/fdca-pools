@@ -8,8 +8,8 @@ export const pools: PoolLocation[] = [
     name: 'West Location',
     fullName: 'FDCA West Aquatic Center',
     address: '1501 S 179th Ave, Omaha, NE 68130',
-    lanes: 8,
-    maxCapacity: 120,
+    lanes: 1,
+    maxCapacity: 25,
     amenities: ['Tiki Pavilion', 'Multiple Large Flat Screen TVs', 'Hot Tub', 'Indoor Restrooms', '1 Wrinkly Dog'],
     hours: {
       weekdays: { open: 6,  close: 21 },
@@ -21,8 +21,8 @@ export const pools: PoolLocation[] = [
     name: 'South Location',
     fullName: 'FDCA South Family Aquatic Center',
     address: '10207 Emiline St, La Vista, NE 68128',
-    lanes: 6,
-    maxCapacity: 80,
+    lanes: 0,
+    maxCapacity: 18,
     amenities: ['New Trees', '2 Spunky Dogs', 'Outdoor TVs', 'Pine Scented Restrooms', 'Sprawling Recycling Pavilion'],
     hours: {
       weekdays: { open: 7,  close: 20 },
