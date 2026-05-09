@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FDCA Pools – Fire &amp; Rescue Aquatic Centers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="nav-logo">🏊</span>
+        <div class="nav-title">
+          <span class="nav-name">FDCA Pools</span>
+          <span class="nav-tagline">Fire &amp; Rescue Aquatic Centers</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#schedule" class="btn-nav">Book a Swim</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">🚒 Proudly Serving Springfield Since 1987</div>
+      <h1>Dive In With <span class="hero-accent">FDCA</span></h1>
+      <p class="hero-sub">
+        Two championship aquatic centers operated by your local Fire &amp; Rescue department.
+        We keep things safe in the water <em>and</em> on the streets.
+      </p>
+      <div class="hero-actions">
+        <a href="#schedule" class="btn btn-primary">Book Your Swim</a>
+        <a href="#locations" class="btn btn-outline">View Locations</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Locations</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">14</span>
+          <span class="stat-label">Total Lanes</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">35+</span>
+          <span class="stat-label">Years Serving</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-decoration" aria-hidden="true">
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <div class="ring ring-3"></div>
+    </div>
+  </header>
+
+  <!-- ========== LOCATIONS ========== -->
+  <section id="locations">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Our Locations</h2>
+        <p>Two world-class facilities — zero drownings on our watch.</p>
+      </div>
+      <div id="locations-grid" class="locations-grid">
+        <!-- Populated by TypeScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section id="pricing">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Pricing</h2>
+        <p>
+          All prices listed in <strong>Busch Light cans</strong> —
+          the official currency of FDCA Pools. 🍺
+        </p>
+      </div>
+      <div id="pricing-content">
+        <!-- Populated by TypeScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SCHEDULER ========== -->
+  <section id="schedule">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Book Your Swim</h2>
+        <p>Reserve your lane in seconds. Cans accepted at the door.</p>
+      </div>
+
+      <form id="booking-form" class="booking-form" novalidate>
+
+        <!-- Step 1: Pool -->
+        <div class="form-step">
+          <div class="step-label">
+            <span class="step-num">1</span>
+            Choose Location
+          </div>
+          <div id="pool-options" class="pool-options">
+            <!-- Populated by TypeScript -->
+          </div>
+        </div>
+
+        <!-- Step 2: Date -->
+        <div class="form-step">
+          <div class="step-label">
+            <span class="step-num">2</span>
+            Select Date
+          </div>
+          <input type="date" id="swim-date" class="date-input" required />
+        </div>
+
+        <!-- Step 3: Time Slot -->
+        <div class="form-step">
+          <div class="step-label">
+            <span class="step-num">3</span>
+            Pick a Time Slot
+          </div>
+          <div id="time-slots" class="time-slots">
+            <p class="placeholder-text">Select a pool and date to see available times</p>
+          </div>
+        </div>
+
+        <!-- Step 4: Swimmers -->
+        <div class="form-step">
+          <div class="step-label">
+            <span class="step-num">4</span>
+            Add Swimmers
+          </div>
+          <div id="swimmer-counts" class="swimmer-counts">
+            <!-- Populated by TypeScript -->
+          </div>
+        </div>
+
+        <!-- Price Summary -->
+        <div id="price-summary" class="price-summary hidden">
+          <div class="price-header">Your Total</div>
+          <div id="price-breakdown" class="price-breakdown"></div>
+          <div class="price-total">
+            <span>Total Due at Door:</span>
+            <span id="total-cans" class="total-cans">0 🍺</span>
+          </div>
+        </div>
+
+        <button type="submit" id="book-btn" class="btn btn-primary btn-large" disabled>
+          Book My Swim 🏊
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span>🏊 FDCA Pools</span>
+        <p>Fire &amp; Rescue Aquatic Centers</p>
+        <p>(555) 800-POOL &nbsp;|&nbsp; swim@fdcapools.gov</p>
+        <p class="footer-disclaimer">
+          Emergency? Call 911. Pool emergency? Also call 911 — we're probably already there.
+        </p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Locations</h4>
+          <p>West Aquatic Center</p>
+          <p>South Family Aquatic Center</p>
+        </div>
+        <div class="footer-col">
+          <h4>Policies</h4>
+          <p>No glass containers</p>
+          <p>Swim caps encouraged</p>
+          <p>Cans accepted cold or warm</p>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <a href="#locations">Locations</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#schedule">Book a Swim</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 FDCA Pools. Prices subject to Busch Light market fluctuations.</p>
+    </div>
+  </footer>
+
+  <!-- ========== BOOKING MODAL ========== -->
+  <div id="booking-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <div class="modal-icon">🎉</div>
+      <h2 id="modal-title">Swim Booked!</h2>
+      <div id="modal-body" class="modal-body">
+        <!-- Populated by TypeScript -->
+      </div>
+      <div class="modal-note">
+        🍺 <strong>Reminder:</strong> Bring your Busch Light cans to the front desk.
+        Cold preferred, but we're not picky.
+      </div>
+      <button id="modal-close" class="btn btn-primary">Awesome, See You There!</button>
+    </div>
+  </div>
+
+  <script src="dist/bundle.js"></script>
+</body>
+</html>
